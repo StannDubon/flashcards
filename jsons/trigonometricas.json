@@ -35,6 +35,60 @@
     { 
       "q": "Angulo doble:<br><br>$\\tan^2x$", 
       "a": "$1 - \\dfrac{2\\tan x}{\\tan(2x)}$"
+    }, 
+    { 
+      "q": "Angulo doble:<br><br>$\\sin(2x)$", 
+      "a": "$ 2\\sin(x){\\cos(x)}$"
+    }, 
+    { 
+      "q": "Angulo doble:<br><br>$\\cos(2x)$", 
+      "a": "$ 1 - {2\\sin^2x}$"
+    }, 
+    { 
+      "q": "Cociente:<br><br>$\\tan x$", 
+      "a": "$ \\dfrac{\\sin x}{\\cos x}$"
+    }, 
+    { 
+      "q": "Cociente:<br><br>$\\cot x$", 
+      "a": "$ \\dfrac{\\cos x}{\\sin x}$"
+    }, 
+    { 
+      "q": "Angulo medio:<br><br>$\\sin^2 x$", 
+      "a": "$ \\dfrac{1 -\\cos (2x)}{2}$"
+    }, 
+    { 
+      "q": "Angulo medio:<br><br>$\\cos^2 x$", 
+      "a": "$ \\dfrac{1 +\\cos (2x)}{2}$"
+    }, 
+    { 
+      "q": "Angulo medio:<br><br>$\\tan^2 x$", 
+      "a": "$ \\dfrac{1 -\\cos (2x)}{1 + cos(2x)}$"
+    }, 
+    { 
+      "q": "Reciprocas:<br><br>$\\sin x$", 
+      "a": "$ \\dfrac{1}{csc x}$"
+    }, 
+    { 
+      "q": "Reciprocas:<br><br>$\\csc x$", 
+      "a": "$ \\dfrac{1}{sin x}$"
+    }, 
+    { 
+      "q": "Reciprocas:<br><br>$\\cos x$", 
+      "a": "$ \\dfrac{1}{sec x}$"
+    }, 
+    { 
+      "q": "Reciprocas:<br><br>$\\sec x$", 
+      "a": "$ \\dfrac{1}{cos x}$"
+    }, 
+    { 
+      "q": "Reciprocas:<br><br>$\\tan x$", 
+      "a": "$ \\dfrac{1}{cot x}$"
+    }, 
+    { 
+      "q": "Reciprocas:<br><br>$\\cot x$", 
+      "a": "$ \\dfrac{1}{tan x}$"
     }
+    
+    
   ]
 }
