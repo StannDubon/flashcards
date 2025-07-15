@@ -1,20 +1,28 @@
-const path = window.location.pathname;
 const root = document.documentElement;
+const path = window.location.pathname.replace(/\.html$/, '');
 
-// Normaliza la ruta para quitar ".html" si lo trae
-const cleanPath = path.replace(/\.html$/, '');
+// Configuración de colores por ruta (fácilmente escalable)
+const routeColors = {
+  '/algebra': {
+    primary: '#ff5c5c'
+  },
+  '/trigonometricas': {
+    primary: '#8f69cc'
+  },
+  '/integrales': {
+    primary: '#4caf50'
+  },
+  '/geometria': {
+    primary: '#2196f3'
+  },
+  '/default': {
+    primary: '#ffffff'
+  }
+};
 
-if (cleanPath === "/algebra") {
-  root.style.setProperty('--primary-color', '#ff5c5c');
-  root.style.setProperty('--secondary-color', '#ff9999');
-} else if (cleanPath === "/trigonometricas") {
-  root.style.setProperty('--primary-color', '#8f69cc');
-  root.style.setProperty('--secondary-color', '#8f69cc');
-} else if (cleanPath === "/integrales") {
-  root.style.setProperty('--primary-color', '#4caf50');
-  root.style.setProperty('--secondary-color', '#81c784');
-} else {
-  // Valores por defecto (ej. blanco)
-  root.style.setProperty('--primary-color', '#ffffff');
-  root.style.setProperty('--secondary-color', '#ffffff');
-}
+// Obtener la configuración de colores para la ruta actual o usar los valores por defecto
+const colorConfig = routeColors[path] || routeColors['/default'];
+
+// Aplicar los colores
+root.style.setProperty('--primary-color', colorConfig.primary);
+root.style.setProperty('--secondary-color', colorConfig.primary);
