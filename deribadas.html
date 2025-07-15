@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deribadas</title>
+
+    <script src="/scripts/add-scripts.js"></script>
+
+</head>
+
+<body>
+
+    <header>
+        <h1><a href="../"></a>Flashcards de Deribadas</h1>
+    </header>
+
+    <div class="controls">
+        <div class="counter" id="counter">0</div>
+    </div>
+
+    <div class="flip-card" onclick="flipCard()">
+        <div class="flip-card-inner" id="card-inner">
+            <div class="flip-card-front" id="question">
+                <div class="card-content">Cargando...</div>
+            </div>
+            <div class="flip-card-back" id="answer">
+                <div class="card-content">...</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="buttons">
+        <button onclick="nextCard()">Siguiente Carta</button>
+    </div>
+
+    <div class="hint">Presiona Espacio para voltear o avanzar</div>
+</body>
+
+</html>

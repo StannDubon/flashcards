@@ -1,0 +1,25 @@
+{
+    "flashcards": [
+    { "q": "$\\frac{d}{dx}(c)$?", "a": "$0$" },
+    { "q": "$\\frac{d}{dx}(x)$?", "a": "$1$" },
+    { "q": "$\\frac{d}{dx}(x^n)$?", "a": "$nx^{n-1}$" },
+    { "q": "$\\frac{d}{dx}(e^x)$?", "a": "$e^x$" },
+    { "q": "$\\frac{d}{dx}(a^x)$?", "a": "$a^x \\ln(a)$" },
+    { "q": "$\\frac{d}{dx}(\\ln x)?$", "a": "$\\frac{1}{x}$" },
+    { "q": "$\\frac{d}{dx}(\\log_a x)?$", "a": "$\\frac{1}{x \\ln a}$" },
+    { "q": "$\\frac{d}{dx}(\\sin x)$?", "a": "$\\cos x$" },
+    { "q": "$\\frac{d}{dx}(\\cos x)$?", "a": "$-\\sin x$" },
+    { "q": "$\\frac{d}{dx}(\\tan x)$?", "a": "$\\sec^2 x$" },
+    { "q": "$\\frac{d}{dx}(\\cot x)$?", "a": "$-\\csc^2 x$" },
+    { "q": "$\\frac{d}{dx}(\\sec x)$?", "a": "$\\sec x \\tan x$" },
+    { "q": "$\\frac{d}{dx}(\\csc x)$?", "a": "$-\\csc x \\cot x$" },
+    { "q": "$\\frac{d}{dx}(\\arcsin x)$?", "a": "$\\frac{1}{\\sqrt{1 - x^2}}$" },
+    { "q": "$\\frac{d}{dx}(\\arccos x)$?", "a": "$\\frac{-1}{\\sqrt{1 - x^2}}$" },
+    { "q": "$\\frac{d}{dx}(\\arctan x)$?", "a": "$\\frac{1}{1 + x^2}$" },
+    { "q": "$\\frac{d}{dx}(\\text{arcsec }x)$", "a": "$\\frac{1}{|x|\\sqrt{x^2 - 1}}$" },
+    { "q": "Regla del producto:<br><br>$\\frac{d}{dx}(f(x)g(x))$?", "a": "$f'(x)g(x) + f(x)g'(x)$" },
+    { "q": "Regla del cociente:<br><br>$\\frac{d}{dx}\\left(\\frac{f(x)}{g(x)}\\right)$?", "a": "$\\frac{f'(x)g(x) - f(x)g'(x)}{g(x)^2}$" },
+    { "q": "Regla de la cadena:<br><br>$\\frac{d}{dx}(f(g(x)))$?", "a": "$f'(g(x)) \\cdot g'(x)$" }
+]
+
+}

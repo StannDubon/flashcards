@@ -12,6 +12,9 @@ const routeColors = {
   '/integrales': {
     primary: '#4caf50'
   },
+  '/deribadas': {
+    primary: '#83BCFF'
+  },
   '/geometria': {
     primary: '#2196f3'
   },
