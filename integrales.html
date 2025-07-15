@@ -346,12 +346,10 @@
     function nextCard() {
       const card = document.getElementById('card-inner');
       
-      // Si todas las cartas han sido mostradas, reiniciar
       if (usedIndices.length === flashcards.length) {
         usedIndices = [];
       }
       
-      // Encontrar un índice no usado
       let newIndex;
       do {
         newIndex = Math.floor(Math.random() * flashcards.length);

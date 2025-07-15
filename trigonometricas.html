@@ -3,26 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trigonometricas</title>
-    <link rel="icon" href="/sources/logo.svg" type="image/png">
-    <link rel="icon" type="image/png" sizes="192x192" href="/sources/logo.svg">
-    <link rel="stylesheet" href="styles/flashcards.css">
-  <!-- MathJax -->
-  <script>
-    window.MathJax = {
-      tex: { 
-        inlineMath: [['$', '$'], ['\\(', '\\)']],
-        tags: 'ams',
-        packages: {'[+]': ['color']}
-      },
-      svg: { fontCache: 'global' },
-      options: {
-        enableMenu: false
-      },
-      loader: {load: ['[tex]/color']}
-    };
-  </script>
+  <title>Trigonometricas</title>
+  <link rel="icon" href="/sources/logo.svg" type="image/png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/sources/logo.svg">
+
+  <link rel="stylesheet" href="styles/flashcards.css">
+  <script src="/scripts/latex-support.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+
 </head>
 <body>
 
@@ -100,94 +88,9 @@
             style: 'text-align: center; font-size: 1.2em;'
         }
     ];
-
-    // [Mantén el resto del JavaScript igual que en tu versión original]
-    let currentIndex = -1;
-    let showingAnswer = false;
-    let usedIndices = [];
-
-    function updateCounter() {
-      document.getElementById('counter').textContent = `${usedIndices.length}/${flashcards.length}`;
-    }
-
-    function flipCard() {
-      const card = document.getElementById('card-inner');
-      if (showingAnswer) {
-        card.classList.remove('flip-in');
-        card.classList.add('flip-out');
-      } else {
-        card.classList.remove('flip-out');
-        card.classList.add('flip-in');
-      }
-      showingAnswer = !showingAnswer;
-    }
-
-    function nextCard() {
-      const card = document.getElementById('card-inner');
-      
-      if (usedIndices.length === flashcards.length) {
-        usedIndices = [];
-      }
-      
-      let newIndex;
-      do {
-        newIndex = Math.floor(Math.random() * flashcards.length);
-      } while (usedIndices.includes(newIndex) && usedIndices.length < flashcards.length);
-      
-      usedIndices.push(newIndex);
-      currentIndex = newIndex;
-      
-      if (showingAnswer) {
-        card.classList.remove('flip-in');
-        card.classList.add('flip-out');
-        showingAnswer = false;
-      }
-      
-      setTimeout(() => {
-        const fc = flashcards[currentIndex];
-        document.getElementById('question').querySelector('.card-content').innerHTML = fc.q;
-        document.getElementById('answer').querySelector('.card-content').innerHTML = fc.a;
-        
-        if (window.MathJax && MathJax.typesetPromise) {
-          MathJax.typesetPromise();
-        }
-        
-        updateCounter();
-      }, 300);
-    }
-
-    if (window.innerWidth > 768) {
-      document.addEventListener('keydown', function(e) {
-        if (e.code === 'Space') {
-          e.preventDefault();
-          if (!showingAnswer) {
-            flipCard();
-          } else {
-            nextCard();
-          }
-        }
-        
-        if (e.key === 'ArrowRight' || e.key === 'ArrowDown') {
-          nextCard();
-        }
-        
-        if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
-          flipCard();
-        }
-      });
-    }
-
-    window.onload = function() {
-      nextCard();
-      updateCounter();
-      
-      if (window.MathJax) {
-        MathJax.startup.document.state(0);
-        MathJax.typesetPromise();
-      }
-    };
   </script>
 </body>
 
 <script src="/scripts/style-switcher.js"></script>
+<script src="/scripts/cards-swipper.js"></script>
 </html>
