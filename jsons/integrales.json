@@ -20,6 +20,9 @@
     { "q": "$\\int \\csc x\\,dx$?", "a": "$\\ln |\\csc x - \\cot x| + C$" },
     { "q": "$\\int \\frac{1}{\\sqrt{a^2 - x^2}}\\,dx$?", "a": "$\\arcsin \\left( \\frac{x}{a} \\right) + C$" },
     { "q": "$\\int \\frac{1}{a^2 + x^2}\\,dx$?", "a": "$\\frac{1}{a} \\arctan \\left( \\frac{x}{a} \\right) + C$" },
-    { "q": "$\\int \\frac{1}{x\\sqrt{x^2 - a^2}}\\,dx$?", "a": "$\\frac{1}{a} \\operatorname{arcsec}\\left( \\frac{x}{a} \\right) + C$" }
+    { "q": "$\\int \\frac{1}{x\\sqrt{x^2 - a^2}}\\,dx$?", "a": "$\\frac{1}{a} \\operatorname{arcsec}\\left( \\frac{x}{a} \\right) + C$" },
+    { "q": "Sustitucion Trigonometrica: <br><br> $\\int\\ (x^2+a^2)$?", "a": "$x = a tan(\\theta)$ <br> $ dx = a sec^2(\\theta) d \\theta $" },
+    { "q": "Sustitucion Trigonometrica: <br><br> $\\int\\ (x^2-a^2)$?", "a": "$x = a sec(\\theta) $  <br> $ dx = a sec(\\theta) tan(\\theta) d \\theta $" },
+    { "q": "Sustitucion Trigonometrica: <br><br> $\\int\\ (a^2-x^2)$?", "a": "$x = a sen(\\theta) $ <br> $ dx = a cos(\\theta) d \\theta $" }
   ]
 }
