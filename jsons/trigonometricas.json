@@ -44,6 +44,10 @@
       "q": "Ángulo doble:<br><br>$\\cos(2x)$", 
       "a": "$\\begin{aligned} &\\cos^2x - \\sin^2x \\\\ &2\\cos^2x - 1 \\\\ &1 - 2\\sin^2x \\end{aligned}$"
     }, 
+    {
+      "q": "Ángulo doble:<br><br>$\\tan(2x)$",
+      "a": "$\\dfrac{2\\tan x}{1 - \\tan^2 x}$"
+    },
     { 
       "q": "Cociente:<br><br>$\\tan x$", 
       "a": "$\\dfrac{\\sin x}{\\cos x}$"
@@ -91,27 +95,27 @@
     
     { 
       "q": "Triángulo rectángulo:<br><br>$\\sin \\theta$", 
-      "a": "$\\dfrac{\\text{Opuesto}}{\text{Hipotenusa}}$"
+      "a": "$\\dfrac{\\text{Opuesto}}{\\text{Hipotenusa}}$"
     },
     { 
       "q": "Triángulo rectángulo:<br><br>$\\cos \\theta$", 
-      "a": "$\\dfrac{\text{Adyacente}}{\text{Hipotenusa}}$"
+      "a": "$\\dfrac{\\text{Adyacente}}{\\text{Hipotenusa}}$"
     },
     { 
       "q": "Triángulo rectángulo:<br><br>$\\tan \\theta$", 
-      "a": "$\\dfrac{\text{Opuesto}}{\text{Adyacente}}$"
+      "a": "$\\dfrac{\\text{Opuesto}}{\\text{Adyacente}}$"
     },
     { 
       "q": "Triángulo rectángulo:<br><br>$\\csc \\theta$", 
-      "a": "$\\dfrac{\text{Hipotenusa}}{\text{Opuesto}}$"
+      "a": "$\\dfrac{\\text{Hipotenusa}}{\\text{Opuesto}}$"
     },
     { 
       "q": "Triángulo rectángulo:<br><br>$\\sec \\theta$", 
-      "a": "$\\dfrac{\text{Hipotenusa}}{\text{Adyacente}}$"
+      "a": "$\\dfrac{\\text{Hipotenusa}}{\\text{Adyacente}}$"
     },
     { 
       "q": "Triángulo rectángulo:<br><br>$\\cot \\theta$", 
-      "a": "$\\dfrac{\text{Adyacente}}{\text{Opuesto}}$"
+      "a": "$\\dfrac{\\text{Adyacente}}{\\text{Opuesto}}$"
     }
   ]
 }
