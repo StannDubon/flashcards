@@ -1,0 +1,25 @@
+{
+  "flashcards": [
+    { "q": "$\\int k\\,dx$?", "a": "$\\int k\\,dx = kx + C$" },
+    { "q": "$\\int dx$?", "a": "$x + C$" },
+    { "q": "$\\int x^n\\,dx$?", "a": "$\\frac{x^{n+1}}{n+1} + C \\quad (n \\neq -1)$" },
+    { "q": "$\\int \\frac{1}{x}\\,dx$?", "a": "$\\ln |x| + C$" },
+    { "q": "$\\int \\sin x\\,dx$?", "a": "$-\\cos x + C$" },
+    { "q": "$\\int \\sin(kx)\\,dx$?", "a": "$-\\frac{\\cos(kx)}{k} + C$" },
+    { "q": "$\\int \\cos x\\,dx$?", "a": "$\\sin x + C$" },
+    { "q": "$\\int \\cos(kx)\\,dx$?", "a": "$\\frac{\\sin(kx)}{k} + C$" },
+    { "q": "$\\int e^x\\,dx$?", "a": "$e^x + C$" },
+    { "q": "$\\int a^x\\,dx$?", "a": "$\\frac{a^x}{\\ln(a)} + C$" },
+    { "q": "$\\int \\sec^2 x\\,dx$?", "a": "$\\tan x + C$" },
+    { "q": "$\\int \\csc^2 x\\,dx$?", "a": "$-\\cot x + C$" },
+    { "q": "$\\int \\sec x \\tan x\\,dx$?", "a": "$\\sec x + C$" },
+    { "q": "$\\int \\csc x \\cot x\\,dx$?", "a": "$-\\csc x + C$" },
+    { "q": "$\\int \\tan x\\,dx$?", "a": "$\\ln |\\sec x| + C$ $\\newline$ = $\\newline$ $-\\ln |\\cos x| + C$" },
+    { "q": "$\\int \\cot x\\,dx$?", "a": "$\\ln |\\sin x| + C$" },
+    { "q": "$\\int \\sec x\\,dx$?", "a": "$\\ln |\\sec x + \\tan x| + C$" },
+    { "q": "$\\int \\csc x\\,dx$?", "a": "$\\ln |\\csc x - \\cot x| + C$" },
+    { "q": "$\\int \\frac{1}{\\sqrt{a^2 - x^2}}\\,dx$?", "a": "$\\arcsin \\left( \\frac{x}{a} \\right) + C$" },
+    { "q": "$\\int \\frac{1}{a^2 + x^2}\\,dx$?", "a": "$\\frac{1}{a} \\arctan \\left( \\frac{x}{a} \\right) + C$" },
+    { "q": "$\\int \\frac{1}{x\\sqrt{x^2 - a^2}}\\,dx$?", "a": "$\\frac{1}{a} \\operatorname{arcsec}\\left( \\frac{x}{a} \\right) + C$" }
+  ]
+}
