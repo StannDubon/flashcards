@@ -10,9 +10,9 @@ const routeColors = {
     primary: '#8f69cc'
   },
   '/integrales': {
-    primary: '#4caf50'
+    primary: '#af4c81ff'
   },
-  '/deribadas': {
+  '/derivadas': {
     primary: '#83BCFF'
   },
   '/geometria': {
