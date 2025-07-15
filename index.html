@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FUCKUDB</title>
+    <link rel="icon" href="/sources/logo.svg" type="image/png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/sources/logo.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #ee7791;
+            --secondary-color: #ee7791;
+            --text-color: #f8f9fa;
+            --bg-color: #121212;
+            --card-bg: #1e1e1e;
+            --card-hover: #242424;
+            --shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            --border-radius: 16px;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body {
+            font-family: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+            font-weight: 500;
+            background: var(--bg-color);
+            color: var(--text-color);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+            transition: var(--transition);
+            line-height: 1.5;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 10px;
+            width: 100%;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            letter-spacing: -0.5px;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.85;
+            margin-bottom: 30px;
+            font-weight: 500;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            color: rgba(248, 249, 250, 0.8);
+        }
+
+        .section-title {
+            font-size: 1.6rem;
+            margin-bottom: 30px;
+            color: var(--text-color);
+            text-align: center;
+            font-weight: 600;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 3px;
+            background: var(--primary-color);
+            border-radius: 3px;
+        }
+
+        .cards-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 25px;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .subject-card {
+            background: var(--card-bg);
+            border-radius: var(--border-radius);
+            padding: 30px;
+            text-align: center;
+            transition: var(--transition);
+            box-shadow: var(--shadow);
+            border: 2px solid var(--primary-color);
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 150px;
+            width: 100%;
+            max-width: 500px;
+        }
+
+        .subject-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+            background: var(--card-hover);
+        }
+
+        .subject-card h2 {
+            font-size: 1.6rem;
+            margin-bottom: 10px;
+            color: var(--text-color);
+            font-weight: 600;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        /* Animaciones */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .header {
+            animation: fadeIn 0.8s ease-out forwards;
+        }
+
+        .section-title {
+            animation: fadeIn 0.8s ease-out 0.2s forwards;
+            opacity: 0;
+        }
+
+        .cards-container {
+            animation: fadeIn 0.8s ease-out 0.4s forwards;
+            opacity: 0;
+        }
+
+        /* ============================================= */
+        /* MEJORAS ESPECÍFICAS PARA MÓVILES */
+        /* ============================================= */
+        @media (max-width: 768px) {
+            body {
+                padding: 15px;
+                justify-content: flex-start;
+            }
+
+            .container {
+                padding: 10px;
+            }
+
+            h1 {
+                font-size: 1.9rem;
+            }
+            
+            .subtitle {
+                font-size: 1.1rem;
+                margin-bottom: 25px;
+            }
+            
+            .section-title {
+                font-size: 1.4rem;
+                margin-bottom: 25px;
+            }
+            
+            .subject-card {
+                padding: 25px;
+                min-height: 130px;
+            }
+            
+            .subject-card h2 {
+                font-size: 1.4rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+            
+            .subtitle {
+                font-size: 1rem;
+            }
+            
+            .subject-card {
+                padding: 20px;
+                min-height: 120px;
+            }
+            
+            .subject-card h2 {
+                font-size: 1.3rem;
+            }
+
+            .section-title {
+                font-size: 1.3rem;
+            }
+        }
+
+        @media (max-width: 360px) {
+            h1 {
+                font-size: 1.6rem;
+            }
+            
+            .subject-card h2 {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>FUCKUDB</h1>
+            <p class="subtitle">Fundamentos Utilitarios Centrados en Kardex Utilizando Datos Base</p>
+        </div>
+        
+        <h2 class="section-title">Escoge el tema a repasar</h2>
+        
+        <div class="cards-container">
+            <a href="/trigonometricas/">
+                <div class="subject-card">
+                    <h2>Identidades Trigonométricas</h2>
+                </div>
+            </a>
+            
+            <a href="/integrales/">
+                <div class="subject-card">
+                    <h2>Integrales</h2>
+                </div>
+            </a>
+
+            <a href="/algebra/">
+                <div class="subject-card">
+                    <h2>Álgebra</h2>
+                </div>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
