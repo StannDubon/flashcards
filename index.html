@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FUCKUDB</title>
+    <title>FCKUDB</title>
     <link rel="icon" href="/sources/logo.svg" type="image/png">
     <link rel="icon" type="image/png" sizes="192x192" href="/sources/logo.svg">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
@@ -39,6 +39,28 @@
             padding: 20px;
             transition: var(--transition);
             line-height: 1.5;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        /* Estilos para los puntos del fondo */
+        #dots-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            pointer-events: none;
+            z-index: -1;
+            overflow: hidden;
+        }
+
+        .dot {
+            position: absolute;
+            border-radius: 50%;
+            background-color: var(--primary-color);
+            opacity: 0.5;
+            transform: translate(0, 0);
         }
 
         .container {
@@ -48,6 +70,7 @@
             flex-direction: column;
             align-items: center;
             padding: 20px;
+            z-index: 1;
         }
 
         .header {
@@ -136,9 +159,7 @@
             color: var(--text-color);
             font-weight: 600;
         }
-        /* ============================================= */ 
-        /* PRUEBA DE COMENATARIO */
-        /* ============================================= */
+
         a {
             text-decoration: none;
             color: inherit;
@@ -154,22 +175,20 @@
         }
 
         .header {
-            animation: fadeIn 0.8s ease-out forwards;
+            animation: fadeIn 0.2s ease-out forwards;
         }
 
         .section-title {
-            animation: fadeIn 0.8s ease-out 0.2s forwards;
+            animation: fadeIn 0.2s ease-out 0.2s forwards;
             opacity: 0;
         }
 
         .cards-container {
-            animation: fadeIn 0.8s ease-out 0.4s forwards;
+            animation: fadeIn 0.2s ease-out 0.2s forwards;
             opacity: 0;
         }
 
-        /* ============================================= */
         /* MEJORAS ESPECÍFICAS PARA MÓVILES */
-        /* ============================================= */
         @media (max-width: 768px) {
             body {
                 padding: 15px;
@@ -239,11 +258,13 @@
     </style>
 </head>
 <body>
+    <!-- Contenedor para los puntos del fondo -->
+    <div id="dots-container"></div>
     
     <div class="container">
         <div class="header">
-            <h1>FUCKUDB</h1>
-            <p class="subtitle">Fundamentos Utilitarios Centrados en Kardex Utilizando Datos Base</p>
+            <h1>FCKUDB</h1>
+            <p class="subtitle">Fundamentos Centrados en Kardex Utilizando Datos Base</p>
         </div>
         
         <h2 class="section-title">Escoge el tema a repasar</h2>
@@ -268,5 +289,85 @@
             </a>
         </div>
     </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Configuración de los puntos
+            const config = {
+                dotColor: 'var(--primary-color)',
+                dotOpacity: 0.15,
+                minSize: 4,
+                maxSize: 5,
+                dotCount: window.innerWidth < 768 ? 60 : 100,
+                movement: true,
+                speed: 0.05
+            };
+
+            const container = document.getElementById('dots-container');
+            
+            // Crear puntos
+            for (let i = 0; i < config.dotCount; i++) {
+                createDot(container, config);
+            }
+            
+            // Función para crear un punto
+            function createDot(container, config) {
+                const dot = document.createElement('div');
+                dot.className = 'dot';
+                
+                // Tamaño aleatorio
+                const size = Math.random() * (config.maxSize - config.minSize) + config.minSize;
+                dot.style.width = `${size}px`;
+                dot.style.height = `${size}px`;
+                
+                // Posición inicial aleatoria
+                const posX = Math.random() * 100;
+                const posY = Math.random() * 100;
+                dot.style.transform = `translate(${posX}vw, ${posY}vh)`;
+                
+                // Estilo del punto
+                dot.style.backgroundColor = config.dotColor;
+                dot.style.opacity = config.dotOpacity.toString();
+                
+                container.appendChild(dot);
+                
+                // Animación si está habilitada
+                if (config.movement) {
+                    animateDot(dot, config.speed);
+                }
+            }
+            
+            // Función para animar los puntos
+            function animateDot(dot, speed) {
+                let x = parseFloat(dot.style.transform.match(/translate\(([\d.]+)vw/)[1]);
+                let y = parseFloat(dot.style.transform.match(/translate\([\d.]+vw, ([\d.]+)vh/)[1]);
+                let xSpeed = (Math.random() - 0.5) * speed;
+                let ySpeed = (Math.random() - 0.5) * speed;
+
+                function move() {
+                    x += xSpeed;
+                    y += ySpeed;
+                    
+                    // Rebotar en los bordes
+                    if (x <= 0 || x >= 100) xSpeed *= -1;
+                    if (y <= 0 || y >= 100) ySpeed *= -1;
+                    
+                    dot.style.transform = `translate(${x}vw, ${y}vh)`;
+                    requestAnimationFrame(move);
+                }
+                
+                move();
+            }
+            
+            // Redimensionar puntos al cambiar el tamaño de la ventana
+            window.addEventListener('resize', function() {
+                container.innerHTML = '';
+                const newCount = window.innerWidth < 768 ? 60 : 100;
+                for (let i = 0; i < newCount; i++) {
+                    createDot(container, {...config, dotCount: newCount});
+                }
+            });
+        });
+    </script>
 </body>
 </html>
