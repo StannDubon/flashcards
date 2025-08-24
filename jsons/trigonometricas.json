@@ -116,6 +116,16 @@
     { 
       "q": "Triángulo rectángulo:<br><br>$\\cot \\theta$", 
       "a": "$\\dfrac{\\text{Adyacente}}{\\text{Opuesto}}$"
+    },
+    { "q": "Producto Seno de ángulo diferente: <br><br> $\\int\\ sin(mx) sen(nx)$?",
+      "a": "$\\dfrac{1}{2}[cos(m-n)x - cos(m+n)x]$" },
+    {
+      "q": "Producto Seno y Coseno de ángulo diferente: <br><br> $\\int\\ sin(mx) cos(nx)$?",
+      "a": "$\\dfrac{1}{2}[sin(m-n)x + sin(m+n)x]$"
+    },
+    {
+      "q": "Producto Coseno de ángulo diferente: <br><br> $\\int\\ cos(mx) cos(nx)$?",
+      "a": "$\\dfrac{1}{2}[cos(m-n)x + cos(m+n)x]$"
     }
   ]
 }
