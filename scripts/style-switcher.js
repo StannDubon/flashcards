@@ -15,7 +15,7 @@ const routeColors = {
   '/derivadas': {
     primary: '#83BCFF'
   },
-  '/geometria': {
+  '/algebraU3': {
     primary: '#2196f3'
   },
   '/default': {
