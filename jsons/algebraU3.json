@@ -1,0 +1,22 @@
+{
+    "flashcards": [
+        { "q": "Distancia entre dos puntos", "a": "$d = \\sqrt{(x_2 - x_1)^2\\: + \\:(y_2 - y_1)^2}$" },
+        { "q": "División de un segmento a una razón", "a": "$P\\left(\\frac{x_1 + r*x_2}{1+r}, \\; \\frac{y_1 + r * y_2}{1+r}\\right)$" },
+        { "q": "Punto medio", "a": "$P\\left(\\frac{x_1 + x_2}{2}, \\; \\frac{y_1 + y_2}{2}\\right)$"},
+        { "q": "Pendiente de angulo", "a": "$m = \\tan(\\Theta)$"},
+        { "q": "Pendiente de puntos", "a": "$m =\\frac{x_2 - x_1}{y_2 - y_1}$"},
+        { "q": "Recta Paralela", "a": "$m_1 = m_2$"},
+        { "q": "Recta Perpendicular", "a": "$m_1 * m_2 = -1$"},
+
+
+        { "q": "Angulo entre rectas", "a": "$\\Theta = \\arctan(\\frac{m_2 - m_1}{1+m_1*m_2})$"},
+        { "q": "Distancia de un punto a una recta", "a": "$d(P,L) = \\frac{|Ax_1 +By_1+C|}{\\sqrt{A^2+B^2}}$"},
+
+        { "q": "Punto Pendiente", "a": "$y_2-y_1 = m(x_2-x_1)$"},
+        { "q": "Ordenada al origen (0,b)", "a": "$y=mx+b$"},
+        { "q": "Forma simetrica (0,b) (a,0)", "a": "$\\frac{x}{a}+\\frac{y}{b} = 1$"},
+        { "q": "Forma general", "a": "$Ax+By+C=0$"},
+        { "q": "Pendiente - Forma general", "a": "$m=-\\frac{A}{B}$"},
+        { "q": "Intercepto en y - Forma general", "a": "$b=-\\frac{A}{B}$"}
+    ]
+}
