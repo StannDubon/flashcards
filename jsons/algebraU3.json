@@ -145,10 +145,6 @@
             "q": "Elipse Vertical:<br><br>General", 
             "a": "$\\frac{(x-h)^2}{b^2} + \\frac{(y-k)^2}{a^2} = 1$"
         },
-
-
-
-        [
             { 
                 "q": "Parábola:<br><br>General (Vertical)", 
                 "a": "$(x-h)^2 = 4p(y-k)$"
@@ -209,6 +205,5 @@
                 "q": "Parábola Horizontal:<br><br>Foco y Directriz", 
                 "a": "$F(h+p,k)$, $x = h-p$"
             }
-        ]
     ]
 }
