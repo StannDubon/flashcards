@@ -20,6 +20,130 @@
 
         { "q": "Recta que pasa por (0,0)", "a": "$Ax+By=0$"},
         { "q": "Recta vertical", "a": "$Ax+C=0$"},
-        { "q": "Recta horizontal", "a": "$By+C=0$"}
+        { "q": "Recta horizontal", "a": "$By+C=0$"},
+
+        
+        { 
+        "q": "Hiperbola:<br><br>General", 
+        "a": "$\\frac{(x-h)^2}{a^2} - \\frac{(y-k)^2}{a^2} = 1$"
+        },
+        { 
+        "q": "Hiperbola:<br><br>Centro", 
+        "a": "$(h,k)$"
+        },
+        { 
+        "q": "Hiperbola:<br><br>Eje Transversal", 
+        "a": "$2a$"
+        },
+        { 
+        "q": "Hiperbola:<br><br>Eje Conjugado", 
+        "a": "$2b$"
+        },
+        { 
+        "q": "Hiperbola:<br><br>Distancia Focal", 
+        "a": "$2c$"
+        },
+        { 
+        "q": "Hiperbola:<br><br>Excentricidad", 
+        "a": "$e = \\frac{c}{a}$"
+        },
+        { 
+        "q": "Hiperbola Horizontal:<br><br>Vértices", 
+        "a": "$V_1(h-a,k), V_2(h+a,k)$"
+        },
+        { 
+        "q": "Hiperbola Vertical:<br><br>Vértices", 
+        "a": "$V_1(h,k-a), V_2(h,k+a)$"
+        },
+        { 
+        "q": "Hiperbola Horizontal:<br><br>Focos", 
+        "a": "$F_1(h-c,k), F_2(h+c,k)$"
+        },
+        { 
+        "q": "Hiperbola Vertical:<br><br>Focos", 
+        "a": "$F_1(h,k-c), F_2(h,k+c)$"
+        },
+        { 
+        "q": "Hiperbola Horizontal:<br><br>Asintotas", 
+        "a": "$y-k=±(\\frac{b}{a})(x-h)$"
+        },
+        { 
+        "q": "Hiperbola Vertical:<br><br>Asintotas", 
+        "a": "$y-k=±(\\frac{a}{b})(x-h)$"
+        },
+        { 
+        "q": "Hiperbola:<br><br>Lados Rectos", 
+        "a": "$LR = \\frac{2b^2}{a}$"
+        },
+
+
+        { 
+            "q": "Elipse:<br><br>General", 
+            "a": "$\\frac{(x-h)^2}{a^2} + \\frac{(y-k)^2}{b^2} = 1$"
+        },
+        { 
+            "q": "Elipse:<br><br>Centro", 
+            "a": "$(h,k)$"
+        },
+        { 
+            "q": "Elipse:<br><br>Eje Mayor", 
+            "a": "$2a$"
+        },
+        { 
+            "q": "Elipse:<br><br>Eje Menor", 
+            "a": "$2b$"
+        },
+        { 
+            "q": "Elipse:<br><br>Distancia Focal", 
+            "a": "$2c$"
+        },
+        { 
+            "q": "Elipse:<br><br>Excentricidad", 
+            "a": "$e = \\frac{c}{a}$"
+        },
+        { 
+            "q": "Elipse Horizontal:<br><br>Vértices Principales", 
+            "a": "$V_1(h-a,k), V_2(h+a,k)$"
+        },
+        { 
+            "q": "Elipse Vertical:<br><br>Vértices Principales", 
+            "a": "$V_1(h,k-a), V_2(h,k+a)$"
+        },
+        { 
+            "q": "Elipse Horizontal:<br><br>Vértices Secundarios", 
+            "a": "$V'_1(h,k-b), V'_2(h,k+b)$"
+        },
+        { 
+            "q": "Elipse Vertical:<br><br>Vértices Secundarios", 
+            "a": "$V'_1(h-b,k), V'_2(h+b,k)$"
+        },
+        { 
+            "q": "Elipse Horizontal:<br><br>Focos", 
+            "a": "$F_1(h-c,k), F_2(h+c,k)$"
+        },
+        { 
+            "q": "Elipse Vertical:<br><br>Focos", 
+            "a": "$F_1(h,k-c), F_2(h,k+c)$"
+        },
+        { 
+            "q": "Elipse:<br><br>Lados Rectos", 
+            "a": "$LR = \\frac{2b^2}{a}$"
+        },
+        { 
+            "q": "Elipse:<br><br>Área", 
+            "a": "$A = \\pi ab$"
+        },
+        { 
+            "q": "Elipse:<br><br>Perímetro (Aprox.)", 
+            "a": "$P \\approx \\pi[3(a+b) - \\sqrt{(3a+b)(a+3b)}]$"
+        },
+        { 
+            "q": "Elipse:<br><br>Relación Fundamental", 
+            "a": "$c^2 = a^2 - b^2$"
+        },
+        { 
+            "q": "Elipse Vertical:<br><br>General", 
+            "a": "$\\frac{(x-h)^2}{b^2} + \\frac{(y-k)^2}{a^2} = 1$"
+        }
     ]
 }
