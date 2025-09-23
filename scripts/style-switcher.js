@@ -21,6 +21,7 @@ const routeColors = {
   '/default': {
     primary: '#ffffff'
   }
+  //Correcciones de error
 };
 
 // Obtener la configuración de colores para la ruta actual o usar los valores por defecto
