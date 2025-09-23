@@ -144,6 +144,71 @@
         { 
             "q": "Elipse Vertical:<br><br>General", 
             "a": "$\\frac{(x-h)^2}{b^2} + \\frac{(y-k)^2}{a^2} = 1$"
-        }
+        },
+
+
+
+        [
+            { 
+                "q": "Parábola:<br><br>General (Vertical)", 
+                "a": "$(x-h)^2 = 4p(y-k)$"
+            },
+            { 
+                "q": "Parábola:<br><br>General (Horizontal)", 
+                "a": "$(y-k)^2 = 4p(x-h)$"
+            },
+            { 
+                "q": "Parábola:<br><br>Vértice", 
+                "a": "$V(h,k)$"
+            },
+            { 
+                "q": "Parábola:<br><br>Foco", 
+                "a": "$F(h,k+p)$ (vertical)<br>$F(h+p,k)$ (horizontal)"
+            },
+            { 
+                "q": "Parábola:<br><br>Directriz", 
+                "a": "$y = k-p$ (vertical)<br>$x = h-p$ (horizontal)"
+            },
+            { 
+                "q": "Parábola:<br><br>Eje de Simetría", 
+                "a": "$x = h$ (vertical)<br>$y = k$ (horizontal)"
+            },
+            { 
+                "q": "Parábola:<br><br>Lado Recto", 
+                "a": "$LR = |4p|$"
+            },
+            { 
+                "q": "Parábola:<br><br>Distancia Focal", 
+                "a": "$|p|$ (distancia vértice-foco)"
+            },
+            { 
+                "q": "Parábola Vertical (Arriba):<br><br>Ecuación", 
+                "a": "$(x-h)^2 = 4p(y-k)$, $p>0$"
+            },
+            { 
+                "q": "Parábola Vertical (Abajo):<br><br>Ecuación", 
+                "a": "$(x-h)^2 = 4p(y-k)$, $p<0$"
+            },
+            { 
+                "q": "Parábola Horizontal (Derecha):<br><br>Ecuación", 
+                "a": "$(y-k)^2 = 4p(x-h)$, $p>0$"
+            },
+            { 
+                "q": "Parábola Horizontal (Izquierda):<br><br>Ecuación", 
+                "a": "$(y-k)^2 = 4p(x-h)$, $p<0$"
+            },
+            { 
+                "q": "Parábola:<br><br>Excentricidad", 
+                "a": "$e = 1$"
+            },
+            { 
+                "q": "Parábola Vertical:<br><br>Foco y Directriz", 
+                "a": "$F(h,k+p)$, $y = k-p$"
+            },
+            { 
+                "q": "Parábola Horizontal:<br><br>Foco y Directriz", 
+                "a": "$F(h+p,k)$, $x = h-p$"
+            }
+        ]
     ]
 }
