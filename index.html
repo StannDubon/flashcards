@@ -271,7 +271,7 @@
         
         <div class="cards-container">
 
-            <a href="www.flashmindudb.netlify.app">
+            <a id="flashmind">
                 <div class="subject-card">
                     <h2>Prueba Flashmind✨</h2>
                 </div>
@@ -310,6 +310,9 @@
     </div>
 
     <script>
+        document.getElementById("flashmind").addEventListener("click", function() {
+            window.location.href = "https://flashmindudb.netlify.app";
+        });
         document.addEventListener('DOMContentLoaded', function() {
             // Configuración de los puntos
             const config = {
